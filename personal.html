@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal - SANKEY Centro de Servicio Electrónico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER CON EL LOGO -->
+    <header>
+        <div class="logo-container">
+            <div class="logo-sankey">SANKEY</div>
+            <div class="subtitulo-servicio">Centro de <span>Servicio Electrónico</span></div>
+        </div>
+    </header>
+
+    <!-- NAVEGACIÓN -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="personal.html">Personal</a></li>
+            <li><a href="#" id="navLogin">Iniciar Sesión</a></li>
+            <li><a href="#" id="navUser" style="display: none;"></a></li>
+            <li><a href="#" id="navLogout" style="display: none;">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <!-- SECCIÓN DE PERSONAL -->
+    <section class="personal-page">
+        <div class="personal-page-container">
+            <h1>Personal</h1>
+            <div class="personal-card">
+                <h2>Equipo Técnico Especializado</h2>
+                <p class="personal-description">Profesionales con amplia experiencia en reparación de equipos electrónicos. Contamos con técnicos calificados para el diagnóstico, reparación y mantenimiento de televisores, electrodomésticos, audio y equipos electrónicos en general.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL DE INICIO DE SESIÓN -->
+    <div id="modalLogin" class="modal-login">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm" novalidate>
+                <div class="form-group">
+                    <label for="usuario">Usuario o Correo Electrónico</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn-login">Ingresar</button>
+                <p class="login-message" id="loginMessage"></p>
+            </form>
+            <p class="registro-link">¿No tienes cuenta? <a href="#" id="btnRegistro">Registrarse</a></p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><strong>SANKEY - Centro de Servicio Electrónico</strong></p>
+        <p>Sincelejo, Sucre | Teléfono: (605) 000-0000 | Email: contacto@sankey.com</p>
+        <p style="margin-top: 15px; font-size: 0.8rem;">&copy; 2026 Universidad del Sinú Elías Bechara Zainum - Ingeniería de Sistemas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

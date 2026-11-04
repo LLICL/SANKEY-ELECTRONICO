@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANKEY - Centro de Servicio Electrónico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER CON EL LOGO -->
+    <header>
+        <div class="logo-container">
+            <div class="logo-sankey">SANKEY</div>
+            <div class="subtitulo-servicio">Centro de <span>Servicio Electrónico</span></div>
+        </div>
+    </header>
+
+    <!-- NAVEGACIÓN -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="personal.html">Personal</a></li>
+            <li><a href="#" id="navLogin">Iniciar Sesión</a></li>
+            <li><a href="#" id="navUser" style="display: none;"></a></li>
+            <li><a href="#" id="navLogout" style="display: none;">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Servicios de Reparación</h1>
+            <p>En SANKEY Centro de Servicio Electrónico ofrecemos reparación y mantenimiento especializado de equipos electrónicos. Diagnóstico preciso, repuestos originales y garantía en nuestros trabajos.</p>
+            
+            <div class="galeria-reparaciones">
+                <h3>Equipos que reparamos</h3>
+                <div class="grid-imagenes">
+                    <div class="item-imagen">
+                        <span>Televisores</span>
+                    </div>
+                    <div class="item-imagen">
+                        <span>Air Fryer</span>
+                    </div>
+                    <div class="item-imagen">
+                        <span>Parlantes</span>
+                    </div>
+                    <div class="item-imagen">
+                        <span>Radios</span>
+                    </div>
+                    <div class="item-imagen">
+                        <span>Amplificadores</span>
+                    </div>
+                    <div class="item-imagen">
+                        <span>Otros Equipos</span>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#" id="btnSolicitarServicio" class="btn-principal">Solicitar Servicio</a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE UBICACIÓN -->
+    <section class="ubicacion">
+        <div class="ubicacion-container">
+            <h2>Ubicación</h2>
+            <p class="ubicacion-titulo">Sincelejo - Sucre</p>
+            <div class="mapa-container">
+                <iframe 
+                    src="https://maps.google.com/maps?q=Carrera%2016%20%2321-62%2C%20Sincelejo%2C%20Sucre%2C%20Colombia&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL DE INICIO DE SESIÓN -->
+    <div id="modalLogin" class="modal-login">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm" novalidate>
+                <div class="form-group">
+                    <label for="usuario">Usuario o Correo Electrónico</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn-login">Ingresar</button>
+                <p class="login-message" id="loginMessage"></p>
+            </form>
+            <p class="registro-link">¿No tienes cuenta? <a href="#" id="btnRegistro">Registrarse</a></p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><strong>SANKEY - Centro de Servicio Electrónico</strong></p>
+        <p>Sincelejo, Sucre | Teléfono: (605) 000-0000 | Email: contacto@sankey.com</p>
+        <p style="margin-top: 15px; font-size: 0.8rem;">&copy; 2026 Universidad del Sinú Elías Bechara Zainum - Ingeniería de Sistemas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
