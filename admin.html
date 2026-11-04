@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Administrador - SANKEY</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER CON EL LOGO -->
+    <header>
+        <div class="logo-container">
+            <div class="logo-sankey">SANKEY</div>
+            <div class="subtitulo-servicio">Centro de <span>Servicio Electrónico</span></div>
+        </div>
+    </header>
+
+    <!-- NAVEGACIÓN -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="personal.html">Personal</a></li>
+            <li><a href="admin.html">Administrador</a></li>
+            <li><a href="cliente.html">Cliente</a></li>
+            <li><a href="#" id="navLogin">Iniciar Sesión</a></li>
+            <li><a href="#" id="navUser" style="display: none;"></a></li>
+            <li><a href="#" id="navLogout" style="display: none;">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <!-- PERFIL ADMINISTRADOR -->
+    <section class="perfil-page">
+        <div class="perfil-container">
+            <div class="perfil-header">
+                <img src="https://ui-avatars.com/api/?name=Admin+SANKEY&background=001a4d&color=fff&size=150" alt="Administrador" class="perfil-foto">
+                <div class="perfil-info-header">
+                    <h1>Panel de Administrador</h1>
+                    <p class="perfil-rol">Administrador del Sistema</p>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <h3>Solicitudes de Reparación</h3>
+                    <p>Gestionar órdenes de servicio</p>
+                    <button class="card-btn">Ver Solicitudes</button>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Gestión de Personal</h3>
+                    <p>Administrar técnicos y personal</p>
+                    <button class="card-btn">Gestionar Personal</button>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Historial</h3>
+                    <p>Historial de reparaciones realizadas</p>
+                    <button class="card-btn">Ver Historial</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL DE INICIO DE SESIÓN -->
+    <div id="modalLogin" class="modal-login">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm" novalidate>
+                <div class="form-group">
+                    <label for="usuario">Usuario o Correo Electrónico</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn-login">Ingresar</button>
+                <p class="login-message" id="loginMessage"></p>
+            </form>
+            <p class="registro-link">¿No tienes cuenta? <a href="#" id="btnRegistro">Registrarse</a></p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><strong>SANKEY - Centro de Servicio Electrónico</strong></p>
+        <p>Sincelejo, Sucre | Teléfono: 313-525-8633 | Email: contacto@sankey.com</p>
+        <p style="margin-top: 15px; font-size: 0.8rem;">&copy; 2026 Ingenieros J-L. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

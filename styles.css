@@ -472,7 +472,7 @@ nav a:hover {
 }
 
 .personal-page-container {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
     text-align: center;
 }
@@ -504,21 +504,318 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     border-top: 4px solid var(--color-azul-brillante);
-    text-align: left;
 }
 
-.personal-card h2 {
+.personal-perfil {
+    text-align: center;
+}
+
+.personal-foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--color-azul-brillante);
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 136, 255, 0.3);
+}
+
+.personal-perfil h2 {
     color: var(--color-azul-oscuro);
     font-size: 1.8rem;
-    margin-bottom: 1rem;
-    text-align: center;
+    margin-bottom: 0.5rem;
 }
 
-.personal-description {
+.cargo {
+    color: var(--color-azul-brillante);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.telefonos {
+    background: var(--color-gris-fondo);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+.telefonos p {
     color: #333;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.telefonos strong {
+    color: var(--color-azul-oscuro);
+}
+
+/* --- PERFIL ADMINISTRADOR Y CLIENTE --- */
+.perfil-page {
+    padding: 3rem 5%;
+    background-color: var(--color-gris-fondo);
+    min-height: calc(100vh - 300px);
+}
+
+.perfil-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.perfil-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: linear-gradient(135deg, var(--color-azul-oscuro) 0%, var(--color-negro) 100%);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    color: var(--color-blanco);
+}
+
+.perfil-foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid var(--color-cian);
+    object-fit: cover;
+}
+
+.perfil-info-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.perfil-rol {
+    color: var(--color-cian);
     font-size: 1.1rem;
-    line-height: 1.8;
+    font-weight: 600;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.dashboard-card {
+    background: var(--color-blanco);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    border-top: 3px solid var(--color-azul-brillante);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.dashboard-card h3 {
+    color: var(--color-azul-oscuro);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.dashboard-card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.card-btn {
+    background-color: var(--color-azul-oscuro);
+    color: var(--color-blanco);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+    background-color: var(--color-azul-brillante);
+}
+
+/* Perfil Cliente */
+.cliente-accion-principal {
+    text-align: center;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, var(--color-cian) 0%, #00bcd4 100%);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 229, 255, 0.4);
+}
+
+.btn-registrar-aparato {
+    background-color: var(--color-azul-oscuro);
+    color: var(--color-blanco);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 26, 77, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-registrar-aparato:hover {
+    background-color: var(--color-negro);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 26, 77, 0.5);
+}
+
+.btn-registrar-aparato .icono {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.texto-ayuda {
+    color: var(--color-azul-oscuro);
+    margin-top: 0.8rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.cliente-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.cliente-section {
+    background: var(--color-blanco);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.cliente-section.full-width {
+    grid-column: 1 / -1;
+}
+
+.cliente-section h2 {
+    color: var(--color-azul-oscuro);
+    margin-bottom: 1rem;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--color-cian);
+    font-size: 1.3rem;
+}
+
+.info-group {
+    margin-bottom: 1rem;
+}
+
+.info-group label {
+    display: block;
+    color: var(--color-azul-oscuro);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.info-value {
+    color: #333;
+    padding: 8px 10px;
+    background: var(--color-gris-fondo);
+    border-radius: 5px;
+    min-height: 35px;
+}
+
+.edit-btn {
+    background-color: var(--color-azul-brillante);
+    color: var(--color-blanco);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+    background-color: var(--color-azul-oscuro);
+}
+
+.solicitud-item {
+    background: var(--color-gris-fondo);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border-left: 3px solid var(--color-cian);
+}
+
+.solicitud-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.solicitud-id {
+    font-weight: bold;
+    color: var(--color-azul-oscuro);
+}
+
+.estado {
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.estado-pendiente {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.new-solicitud-btn {
+    width: 100%;
+    background-color: var(--color-cian);
+    color: var(--color-negro);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.new-solicitud-btn:hover {
+    background-color: #00bcd4;
+}
+
+.historial-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.historial-table thead {
+    background: var(--color-azul-oscuro);
+    color: var(--color-blanco);
+}
+
+.historial-table th,
+.historial-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #e2e8f0;
+}
+
+.historial-table tbody tr:nth-child(even) {
+    background: var(--color-gris-fondo);
 }
 
 /* --- FOOTER --- */
@@ -552,8 +849,17 @@ footer strong {
     .ubicacion-titulo { font-size: 1.3rem; letter-spacing: 2px; }
     .personal-page h1 { font-size: 2rem; }
     .personal-card { padding: 1.8rem; }
-    .personal-card h2 { font-size: 1.5rem; }
-    .personal-description { font-size: 1rem; }
+    .personal-perfil h2 { font-size: 1.5rem; }
+    .cargo { font-size: 1.1rem; }
+    .personal-foto { width: 150px; height: 150px; }
+    .perfil-header { flex-direction: column; text-align: center; }
+    .perfil-info-header h1 { font-size: 1.8rem; }
+    .btn-registrar-aparato { font-size: 1.1rem; padding: 12px 30px; }
+    .dashboard-grid { grid-template-columns: 1fr; }
+    .cliente-grid { grid-template-columns: 1fr; }
+    .historial-table { font-size: 0.85rem; }
+    .historial-table th,
+    .historial-table td { padding: 6px; }
     .mapa-container iframe { height: 300px; }
     .modal-content { padding: 2rem 1.5rem; width: 95%; }
 }
@@ -564,8 +870,18 @@ footer strong {
     .item-imagen span { font-size: 0.75rem; min-height: 45px; padding: 0.5rem 0.2rem; }
     .ubicacion-titulo { font-size: 1.1rem; letter-spacing: 1.5px; }
     .personal-card { padding: 1.5rem; }
-    .personal-card h2 { font-size: 1.3rem; }
-    .personal-description { font-size: 0.95rem; }
+    .personal-perfil h2 { font-size: 1.3rem; }
+    .cargo { font-size: 1rem; }
+    .personal-foto { width: 120px; height: 120px; }
+    .telefonos { padding: 1rem; }
+    .perfil-header { padding: 1.5rem; }
+    .perfil-info-header h1 { font-size: 1.5rem; }
+    .perfil-foto { width: 100px; height: 100px; }
+    .btn-registrar-aparato { font-size: 1rem; padding: 10px 25px; }
+    .cliente-accion-principal { padding: 1.5rem; }
+    .texto-ayuda { font-size: 0.85rem; }
+    .solicitud-header { flex-direction: column; gap: 0.3rem; }
+    .historial-table { font-size: 0.75rem; }
     .mapa-container iframe { height: 250px; }
     .modal-content { padding: 1.5rem 1rem; }
     .modal-content h2 { font-size: 1.5rem; }
