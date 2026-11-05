@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob: https://*.supabase.co; connect-src 'self' https://*.supabase.co; base-uri 'self'; form-action 'self'; object-src 'none'; frame-src https://www.google.com https://maps.google.com">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#001a4d">
+<meta name="description" content="SANKEY, centro de servicio electrónico en Sincelejo: reparación de televisores, parlantes, radios, amplificadores y electrodomésticos, con seguimiento en línea.">
+<title>SANKEY · Centro de Servicio Electrónico en Sincelejo</title>
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/publico.css">
+</head>
+<body>
+
+<header class="cabecera" id="cabecera">
+  <div class="cabecera-in">
+    <a class="marca" href="index.html" aria-label="SANKEY, inicio">SANKEY<small>Centro de servicio electrónico</small></a>
+    <button type="button" class="menu-btn" id="btnMenu" aria-expanded="false" aria-controls="menuPrincipal" aria-label="Abrir menú">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav id="menuPrincipal" aria-label="Principal">
+      <a href="#servicios">Equipos</a>
+      <a href="#como">Cómo funciona</a>
+      <a href="#cuenta">Tu cuenta</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#ubicacion">Ubicación</a>
+    </nav>
+    <div class="acciones">
+      <a class="btn-sec" href="ingresar.html" data-sesion="no">Ingresar</a>
+      <a class="btn-cian" href="registro.html" data-sesion="no">Crear cuenta</a>
+      <a class="btn-cian oculto" href="panel.html" data-sesion="si">Ir a mi panel</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="heroe">
+  <div class="heroe-in">
+    <div>
+      <h1>Tu equipo electrónico, reparado y con seguimiento en línea</h1>
+      <p class="lead">Reparamos televisores, parlantes, radios, amplificadores y electrodomésticos en Sincelejo. Pide tu reparación desde la web y mira cada avance sin ir al taller.</p>
+      <div class="btns">
+        <a class="btn-cian btn-grande" href="registro.html" data-solicitar>Solicitar reparación</a>
+        <a class="btn-sec btn-grande" href="#como">Ver cómo funciona</a>
+      </div>
+      <p class="nota">Servicio autorizado · Carrera 16 #21-62, Sincelejo, Sucre</p>
+    </div>
+    <div class="letrero"><img src="img/logo-sankey.jpg" width="250" height="133" alt="Letrero de SANKEY: audio, video, electrodomésticos y línea blanca. Servicio autorizado. Centro de servicio electrónico."></div>
+  </div>
+</section>
+
+<section class="garantias" aria-label="Lo que nos distingue">
+  <div class="garantias-in">
+    <div><strong>Diagnóstico preciso</strong><span>Revisamos el equipo antes de cotizar.</span></div>
+    <div><strong>Repuestos originales</strong><span>Piezas de calidad para que la reparación dure.</span></div>
+    <div><strong>Garantía en nuestros trabajos</strong><span>Respaldamos cada reparación que hacemos.</span></div>
+  </div>
+</section>
+
+<section class="seccion oscura" id="servicios">
+  <div class="seccion-in">
+    <h2>Equipos que reparamos</h2>
+    <p class="sub">¿No ves el tuyo? Cuéntanos la falla en tu solicitud y te decimos si podemos repararlo.</p>
+    <div class="equipos">
+      <div class="equipo"><img src="img/tv.svg" alt="" width="72" height="72"><strong>Televisores</strong></div>
+      <div class="equipo"><img src="img/airfryer.svg" alt="" width="72" height="72"><strong>Air fryer</strong></div>
+      <div class="equipo"><img src="img/parlante.svg" alt="" width="72" height="72"><strong>Parlantes</strong></div>
+      <div class="equipo"><img src="img/radio.svg" alt="" width="72" height="72"><strong>Radios</strong></div>
+      <div class="equipo"><img src="img/amplificador.svg" alt="" width="72" height="72"><strong>Amplificadores</strong></div>
+      <div class="equipo"><img src="img/otros.svg" alt="" width="72" height="72"><strong>Otros equipos</strong></div>
+    </div>
+  </div>
+</section>
+
+<section class="seccion blanca" id="como">
+  <div class="seccion-in">
+    <h2>Así fluye tu reparación</h2>
+    <p class="sub">Desde que nos cuentas la falla hasta que recoges tu equipo, tú decides y estás informado en cada paso.</p>
+    <div class="flujo">
+      <svg class="flujo-cinta" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="gcinta" x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0" stop-color="#0088ff"/><stop offset=".55" stop-color="#00e5ff"/><stop offset="1" stop-color="#e6ff00"/>
+          </linearGradient>
+        </defs>
+        <path d="M0 60 Q50 38 100 60 T200 60 T300 60 T400 60 T500 60 T600 60 T700 60 T800 60 T900 60 T1000 60" fill="none" stroke="url(#gcinta)" stroke-width="26" stroke-linecap="round" vector-effect="non-scaling-stroke" opacity=".9"/>
+      </svg>
+      <ol>
+        <li><span class="num">1</span><h3>Pide tu reparación</h3><p>Cuéntanos qué le pasa al equipo y adjunta fotos si quieres.</p></li>
+        <li><span class="num">2</span><h3>Revisamos tu solicitud</h3><p>Te avisamos por correo cuando la aceptamos y quién la atiende.</p></li>
+        <li><span class="num">3</span><h3>Apruebas la cotización</h3><p>Ves el valor y los repuestos. Solo reparamos cuando tú aceptas.</p></li>
+        <li><span class="num">4</span><h3>Reparamos y te informamos</h3><p>Publicamos avances con fotos para que veas el progreso.</p></li>
+        <li><span class="num">5</span><h3>Retiras tu equipo</h3><p>Te avisamos cuando está listo y te recordamos si se te pasa.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="seccion oscura" id="cuenta">
+  <div class="seccion-in cuenta">
+    <div>
+      <h2>Tu cuenta te muestra todo, sin tener que llamar</h2>
+      <p class="sub">Crea tu cuenta gratis y lleva el control de tus reparaciones desde el celular o el computador.</p>
+      <ul>
+        <li><strong>Seguimiento paso a paso</strong>Mira en qué etapa va tu equipo y lee cada avance.</li>
+        <li><strong>Cotizaciones claras</strong>Apruebas o rechazas con un botón. Si el valor cambia, te avisamos.</li>
+        <li><strong>Citas sin filas</strong>Elige un horario libre o propón el tuyo.</li>
+        <li><strong>Avisos por correo</strong>Te escribimos cuando hay novedades o tu equipo está listo.</li>
+      </ul>
+      <div class="btns">
+        <a class="btn-cian btn-grande" href="registro.html" data-sesion="no">Crear mi cuenta</a>
+        <a class="btn-cian btn-grande oculto" href="panel.html" data-sesion="si">Ir a mi panel</a>
+        <a class="btn-sec btn-grande" href="ingresar.html" data-sesion="no">Ya tengo cuenta</a>
+      </div>
+    </div>
+    <div class="ejemplo" aria-label="Ejemplo de seguimiento">
+      <div class="cab"><strong>Caso de ejemplo: Televisor</strong><span class="badge b-azul">En reparación</span></div>
+      <ol class="etapas">
+        <li class="hecha">Solicitud</li><li class="hecha">Aceptada</li><li class="hecha">Cotización</li><li class="actual">Reparación</li><li>Lista</li><li>Entregada</li>
+      </ol>
+      <div class="linea"><small>Último avance</small>Cambiamos la fuente de poder. Estamos probando la imagen.</div>
+      <p class="nota-ej">Ejemplo ilustrativo de cómo verás tus casos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" id="contacto">
+  <div class="seccion-in atencion">
+    <div class="letrero"><img src="img/logo-sankey.jpg" width="250" height="133" alt="Letrero de SANKEY, servicio autorizado" loading="lazy"></div>
+    <div class="persona">
+      <h2>Habla con nosotros</h2>
+      <p class="sub">Para dudas sobre tu equipo o para coordinar la entrega.</p>
+      <strong>Ricardo Alvarez Mendoza</strong>
+      <p class="cargo">Jefe de Servicio de Televisores y Variedades</p>
+      <div class="telefonos">
+        <div class="telefono"><b>313-525-8633</b><span class="btns"><a class="btn-primary mini" href="tel:+573135258633">Llamar</a><a class="btn-ok mini" href="https://wa.me/573135258633" target="_blank" rel="noopener noreferrer">WhatsApp</a></span></div>
+        <div class="telefono"><b>301-715-1173</b><span class="btns"><a class="btn-primary mini" href="tel:+573017151173">Llamar</a><a class="btn-ok mini" href="https://wa.me/573017151173" target="_blank" rel="noopener noreferrer">WhatsApp</a></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="seccion blanca" id="ubicacion">
+  <div class="seccion-in">
+    <h2>Dónde estamos</h2>
+    <div class="direccion">
+      <strong>Carrera 16 #21-62, Sincelejo, Sucre</strong>
+      <a class="btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Carrera+16+%2321-62+Sincelejo+Sucre+Colombia" target="_blank" rel="noopener noreferrer">Cómo llegar</a>
+    </div>
+    <div class="mapa">
+      <iframe title="Mapa: SANKEY en Carrera 16 #21-62, Sincelejo" src="https://maps.google.com/maps?q=Carrera%2016%20%2321-62%2C%20Sincelejo%2C%20Sucre%2C%20Colombia&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pie">
+  <div class="pie-in">
+    <div><span class="marca">SANKEY</span><p>Centro de Servicio Electrónico</p><p>Audio · Video · Electrodomésticos · Línea blanca</p></div>
+    <div><h3>Contacto</h3><p>Sincelejo, Sucre</p><a href="tel:+573135258633">313-525-8633</a><a href="tel:+573017151173">301-715-1173</a><a href="mailto:contacto@sankey.com">contacto@sankey.com</a></div>
+    <div><h3>Tu cuenta</h3><a href="ingresar.html">Ingresar</a><a href="registro.html">Crear cuenta</a><a href="recuperar.html">Recuperar contraseña</a></div>
+  </div>
+  <div class="legal">&copy; 2026 Ingenieros J-L. Todos los derechos reservados.</div>
+</footer>
+
+<script src="js/vendor/supabase.js"></script>
+<script src="js/config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/inicio.js"></script>
+</body>
+</html>
